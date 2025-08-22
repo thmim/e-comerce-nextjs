@@ -1,12 +1,13 @@
-import Image from 'next/image'
-import React from 'react'
+
+import Image from "next/image";
+import React from "react";
 
 export default function Banner() {
   return (
-    <section className="relative w-11/12 mx-auto h-[80vh] flex items-center justify-center bg-gradient-to-r from-black/40 to-black/20">
+    <section className="relative w-full h-[80vh] flex items-center justify-center bg-gradient-to-r from-black/40 to-black/20">
       {/* Background Image */}
       <Image
-        src="/banner.jpg"
+        src="/banner.jpg" 
         alt="Sports Banner"
         fill
         priority
@@ -33,5 +34,5 @@ export default function Banner() {
         </div>
       </div>
     </section>
-  )
+  );
 }

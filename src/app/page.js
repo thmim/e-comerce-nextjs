@@ -1,6 +1,5 @@
-import Banner from "./components/Banner";
-import Products from "./components/Products";
-import TopRatedProducts from "./components/TopRatedProducts";
+import Banner from "../components/Banner";
+import TopRatedProducts from "../components/TopRatedProducts";
 
 
 export default function Home() {
