@@ -47,6 +47,9 @@ export const authOptions = {
     pages: {
         signIn: "/login"
     },
+//     session: {
+//     strategy: "jwt", 
+//   },
     callbacks: {
         async signIn({ user, account, profile, email, credentials }) {
             // Console these to check necessary properites

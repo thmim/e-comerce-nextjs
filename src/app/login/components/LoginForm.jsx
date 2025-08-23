@@ -34,40 +34,64 @@ export default function LoginForm() {
     }
 }
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-lg space-y-8">
-      <label className="form-control w-full">
-        <div className="label w-full">
-          <span className="label-text  font-bold">Email</span>
-        </div>
-        <input
-          type="text"
-          name="email"
-          placeholder="Type here"
-          className="input input-bordered w-full"
-        />
-      </label>
-      <label className="form-control w-full">
-        <div className="label w-full">
-          <span className="label-text font-bold">Password</span>
-        </div>
-        <input
-          type="password"
-          name="password"
-          placeholder="Type here"
-          className="input input-bordered w-full"
-        />
-      </label>
-      <button className="w-full h-12 bg-orange-500 text-white font-bold">
-        Sign In
-      </button>
-      {/* <p className="text-center">Or Sign In with</p>
-      <FaGoogle /> */}
-      <p className="text-center">
-        Already have an account?{" "}
-        <Link href="/register" className="text-orange-500 font-bold">
-          Register
-        </Link>
-      </p>
-    </form>
+    <form
+  onSubmit={handleSubmit}
+  className="w-full max-w-md mx-auto p-8 bg-white shadow-2xl rounded-2xl space-y-6 sm:space-y-8"
+>
+  <h2 className="text-3xl font-extrabold text-center text-gray-800">
+    Welcome Back
+  </h2>
+
+  {/* Email */}
+  <label className="form-control w-full">
+    <span className="label-text font-semibold text-gray-700">Email</span>
+    <input
+      type="email"
+      name="email"
+      placeholder="Enter your email"
+      className="input input-bordered w-full rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none transition-all"
+      required
+    />
+  </label>
+
+  {/* Password */}
+  <label className="form-control w-full">
+    <span className="label-text font-semibold text-gray-700">Password</span>
+    <input
+      type="password"
+      name="password"
+      placeholder="Enter your password"
+      className="input input-bordered w-full rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none transition-all"
+      required
+    />
+  </label>
+
+  {/* Sign In Button */}
+  <button className="w-full py-3 bg-gradient-to-r from-blue-400 to-blue-500 text-white font-bold rounded-xl hover:scale-105 transform transition-all shadow-md hover:shadow-lg">
+    Sign In
+  </button>
+
+  {/* OR Divider */}
+  {/* <div className="flex items-center justify-center space-x-4">
+    <hr className="w-1/3 border-gray-300" />
+    <span className="text-gray-500 font-medium">Or Sign In with</span>
+    <hr className="w-1/3 border-gray-300" />
+  </div> */}
+
+  {/* Social login placeholder */}
+  {/* <div className="flex justify-center gap-4">
+      <FaGoogle className="text-2xl text-red-500 cursor-pointer hover:scale-110 transition-transform" />
+      <FaGithub className="text-2xl text-gray-800 cursor-pointer hover:scale-110 transition-transform" />
+  </div> */}
+
+  {/* Register Link */}
+  <p className="text-center text-gray-600">
+    Don't have an account?{" "}
+    <Link href="/register" className="text-blue-500 font-bold hover:underline">
+      Register
+    </Link>
+  </p>
+</form>
+
   )
 }

@@ -28,7 +28,7 @@ export default function Navbar() {
     <a className="text-3xl font-bold">SportsHut</a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal flex gap-10">
+    <ul className="menu menu-horizontal font-bold flex gap-10">
       {links}
     </ul>
   </div>
@@ -44,14 +44,17 @@ export default function Navbar() {
                     alt="user-logo"
                   />
                 </li> */}
-                <li onClick={() => signOut()}>Log Out</li>
+                <li className="btn bg-blue-500 rounded-xl" 
+                onClick={() => signOut()}>
+                  Log Out
+                  </li>
               </>
             ) : (
               <>
-                <li>
+                <li className="btn bg-blue-500 rounded-xl hidden lg:block">
                   <Link href={"/register"}>Register</Link>
                 </li>
-                <li>
+                <li className="btn bg-blue-500 rounded-xl">
                   <Link href={"/login"}>Login</Link>
                 </li>
               </>

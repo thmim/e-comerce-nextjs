@@ -4,29 +4,7 @@ import React, { useState } from 'react'
 import toast from 'react-hot-toast';
 
 export default function ProductsForm() {
-  // const handleSubmit = e =>{
-  //   e.preventDefault();
-  //   const form = e.target;
-  //   const category = form.category.value;
-  //   const name = form.name.value;
-  //   const brand = form.brand.value;
-  //   const price = form.price.value;
-  //   const stock = form.stock.value;
-  //   const img = form.img.value;
-  //   const quantity = form.quantity.value;
-  //   const description = form.description.value;
-    
-  //   const addProductPayload = {
-  //     category,
-  //     name,
-  //     brand,
-  //     price,stock,img,quantity,
-  //     description,
-  //     ratings:0,
-  //     ratingsCount:0,
-  //   }
-  //   console.log(addProductPayload)
-  // }
+  
   const router = useRouter();
   const [loading, setLoading] = useState(false);
 
