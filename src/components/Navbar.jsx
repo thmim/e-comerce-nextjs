@@ -9,7 +9,7 @@ export default function Navbar() {
     
     <li><Link href="/">Home</Link></li>
     <li><Link href="/products">Products</Link></li>
-    {/* <li><Link href="/">Add Products</Link></li> */}
+    <li><Link href="/dashboard/add-product">Add Products</Link></li>
     
     </>
   return (
